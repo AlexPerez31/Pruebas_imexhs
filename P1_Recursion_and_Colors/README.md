@@ -2,13 +2,11 @@
 
 Este script resuelve una variante del clásico problema de la Torre de Hanói, donde además de la restricción de tamaño, **no se permite colocar discos del mismo color uno encima del otro**.
 
----
 
 ## Cómo probar nuevos casos
 
 Para realizar pruebas personalizadas, simplemente reemplaza la variable `disks` dentro del archivo `main.py` por cualquier lista de tuplas con el siguiente formato:
 
-```python
 disks = [(tamaño, "color")]
 
 Ejemplo:
