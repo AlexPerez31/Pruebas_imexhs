@@ -6,7 +6,7 @@ Realice todas las cuatro pruebas establecidas tratando de documentar todo lo má
 Para estas pruebas tarte de que el output fuera lo más similar posible a los ejemplos datos en el documento pdf.
 
 
-## Prueba 3>:
+## Prueba 3:
 Esta prueba la realicé usando Django y además de cumplir con todos los requisitos necesario también quise agregar algunas funcionalidades extra que serían un plus en el proyecto y mejorarían la escalabilidad como demostración de mis habilidades en arquitectura de desarrollo y escalabilidad de proyectos a largo plazo:
 
 * Documentación de API: Integré documentación interactiva con Swagger y ReDoc, accesible desde el navegador. Esto permite explorar todos los endpoints disponibles y probarlos desde la misma interfaz.
