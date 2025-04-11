@@ -1,0 +1,5 @@
+2025-04-08 22:57:40,867 - ERROR - Carpeta no encontrada: data\test_folder
+2025-04-08 23:24:12,511 - ERROR - Archivo CSV no encontrado: data\sample-02-csv.csv
+2025-04-08 23:26:55,944 - ERROR - El archivo CSV esta vacio: data\sample-02-csv.csv
+2025-04-09 00:27:10,576 - ERROR - Error al procesar DICOM: Third dimension must be 3 or 4
+2025-04-09 00:39:15,585 - ERROR - Archivo DICOM no encontrado: data\sample-02-dicom-2

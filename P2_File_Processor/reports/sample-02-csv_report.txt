@@ -1,0 +1,13 @@
+CSV Analysis Report
+Columns: ['PatientID', 'Age', 'Weight', 'Height', 'Cholesterol', 'HeartRate']
+Rows: 52
+
+Numeric Columns:
+  - Age: Average = 31.08, Std Dev = 7.41
+  - Weight: Average = 75.96, Std Dev = 4.49
+  - Height: Average = 169.6, Std Dev = 4.82
+  - Cholesterol: Average = 198.56, Std Dev = 8.65
+  - HeartRate: Average = 87.6, Std Dev = 16.14
+
+Non-Numeric Summary:
+  - PatientID: Unique Values = 52

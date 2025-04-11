@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "00f70b91-a608-43ab-be00-7b1eb8a62d08",
+		"name": "Medical API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42808325"
+	},
+	"item": [
+		{
+			"name": "Cargar datos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"1\": {\r\n        \"id\": \"aabbccdd1\",\r\n        \"data\": [\r\n            \"78 83 21 68 96 46 40 11 1 88\",\r\n            \"58 75 71 69 33 14 15 93 18 54\",\r\n            \"46 54 73 63 85 4 30 76 15 56\"\r\n        ],\r\n        \"deviceName\": \"CT SCAN\"\r\n    },\r\n    \"2\": {\r\n        \"id\": \"aabbcc2\",\r\n        \"data\": [\r\n            \"14 85 30 41 64 66 85 76 96 71\",\r\n            \"68 53 85 9 35 52 68 0 17 5\",\r\n            \"78 40 83 72 82 94 8 19 23 62\"\r\n        ],\r\n        \"deviceName\": \"CT SCAN\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8000/api/data/upload/"
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar todos los datos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/data/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?created_date__gte=2025-04-01T00:00:00Z\n",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?created_date__gte=2025-04-01T00:00:00Z\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "created_date__gte",
+							"value": "2025-04-01T00:00:00Z\n"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?updated_date__lt=2026-04-08T12:00:00Z",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?updated_date__lt=2026-04-08T12:00:00Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "updated_date__lt",
+							"value": "2026-04-08T12:00:00Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?average_before_normalization__exact=47.54",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?average_before_normalization__exact=47.54",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "average_before_normalization__exact",
+							"value": "47.54"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?average_before_normalization__gt=50",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?average_before_normalization__gt=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "average_before_normalization__gt",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?average_before_normalization__lte=60",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?average_before_normalization__lte=60",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "average_before_normalization__lte",
+							"value": "60"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?average_after_normalization__gte=0.4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?average_after_normalization__gte=0.4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "average_after_normalization__gte",
+							"value": "0.4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?data_size__exact=50",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?data_size__exact=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "data_size__exact",
+							"value": "50"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/?created_date__gte=2025-04-01T00:00:00Z&average_before_normalization__gt=45&data_size__lte=150",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/data/?created_date__gte=2025-04-01T00:00:00Z&average_before_normalization__gt=45&data_size__lte=150",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"data",
+						""
+					],
+					"query": [
+						{
+							"key": "created_date__gte",
+							"value": "2025-04-01T00:00:00Z"
+						},
+						{
+							"key": "average_before_normalization__gt",
+							"value": "45"
+						},
+						{
+							"key": "data_size__lte",
+							"value": "150"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar por ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://127.0.0.1:8000/api/data/aabbcc1/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/update/aabbcc1/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"device_name\": \"Cambio de nombre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/data/update/aabbcc1/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/update/aabbcc2/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"cambio de id\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/data/update/aabbcc2/"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/data/delete/aabbcc3/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/data/delete/aabbcc3/"
+			},
+			"response": []
+		}
+	]
+}
