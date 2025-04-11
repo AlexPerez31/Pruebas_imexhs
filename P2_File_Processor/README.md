@@ -18,9 +18,9 @@ python3 test_processor.py
 Para probar cualquier archivo asegurate que este dentro de la carpeta selecionada como path
 y luego en los parametros envia el nombre con formato del archivo especifico
 
-# Analizar un nuevo archivo CSV
+#### Analizar un nuevo archivo CSV
 processor.read_csv(filename="ejemplo.csv", summary=True)
-# Leer otro DICOM
+#### Leer otro DICOM
 processor.read_dicom(filename="ejemplo.dcm", extract_image=True)
 
 
