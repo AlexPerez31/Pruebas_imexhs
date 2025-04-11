@@ -1,0 +1,43 @@
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 40px;">
+  <mat-vertical-stepper linear>
+    <!-- Paso 1 -->
+    <mat-step label="Sube la imagen" [completed]="isImageLoaded">
+      <p>Debes subir una imagen binaria (fondo blanco y mancha negra).</p>
+  
+      <input type="file" accept="image/*" (change)="onImageSelected($event)" />
+  
+      <div class="preview" *ngIf="imageSrc">
+        <img [src]="imageSrc" alt="Vista previa" />
+      </div>
+
+      <div class="spacer"></div>
+      <button mat-button matStepperNext>Siguiente</button>
+    </mat-step>
+  
+    <!-- Paso 2 -->
+    <mat-step label="Elige cantidad de puntos aleatorios">
+        <p>Usa el slider para indicar cuántos puntos usar.</p>
+        <div style="display: flex; align-items: center; gap: 16px; width: 100%; max-width: 600px; margin-top: 24px;">
+            <mat-slider 
+                min="1000" 
+                max="200000" 
+                step="1000" 
+                style="width: 100%;">
+                <input matSliderThumb [(ngModel)]="points" name="points" />
+              </mat-slider>
+            <span style="min-width: 80px;">{{ points }} pts</span>
+        </div>
+        <div class="spacer"></div>
+        <button mat-button matStepperPrevious>Anterior</button>
+        <button mat-button matStepperNext>Siguiente</button>
+    </mat-step>
+  
+    <!-- Paso 3 -->
+    <mat-step label="Calcula el área">
+      <p>Haz clic para calcular el área estimada de la mancha.</p>
+      <button mat-raised-button color="accent" (click)="calculateArea()">Calcular área</button>
+      <div class="spacer"></div>
+      <button mat-button matStepperPrevious>Anterior</button>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>

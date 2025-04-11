@@ -1,0 +1,42 @@
+<div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Imagen</th>
+          <th>Tamaño (px)</th>
+          <th>Cantidad de puntos</th>
+          <th>Puntos en la mancha</th>
+          <th>Área estimada</th>
+          <th>Fecha y hora</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of paginatedResults">
+          <td><img [src]="result.imageSrc" alt="Miniatura" /></td>
+          <td>{{ result.width }} x {{ result.height }}</td>
+          <td>{{ result.points }}</td>
+          <td>{{ result.pointsInside }}</td>
+          <td>{{ result.estimatedArea | number:'1.0-2' }} px²</td>
+          <td>{{ result.timestamp }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <p style="text-align: right; font-size: 14px; color: #666;">
+    Página {{ currentPage }} de {{ totalPages }}
+  </p>
+
+  <!-- Paginación -->
+  <div class="pagination" *ngIf="totalPages > 1">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">Anterior</button>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">Siguiente</button>
+  </div>
+
+  <div style="margin-top: 20px; text-align: center;">
+    <button
+      (click)="clearResults()"
+      style="padding: 10px 20px; background-color: #e53935; color: white; border: none; border-radius: 5px; cursor: pointer;"
+    >
+      Limpiar Historial
+  </button>

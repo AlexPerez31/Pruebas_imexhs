@@ -1,0 +1,10 @@
+<mat-tab-group [(selectedIndex)]="selectedTabIndex">
+  <mat-tab label="Subir Imagen para Calcular Área">
+    <!-- Escucho el evento que viene desde HomePageComponent -->
+    <app-home-page (goToResults)="selectedTabIndex = 1"></app-home-page>
+  </mat-tab>
+
+  <mat-tab label="Resultados">
+    <app-results-page></app-results-page>
+  </mat-tab>
+</mat-tab-group>

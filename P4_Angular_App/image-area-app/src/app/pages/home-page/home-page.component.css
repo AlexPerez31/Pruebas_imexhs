@@ -1,0 +1,9 @@
+.spacer {
+    margin-top: 20px;
+  }
+  
+  mat-vertical-stepper {
+    margin-top: 30px;
+    max-width: 600px;
+  }
+  
