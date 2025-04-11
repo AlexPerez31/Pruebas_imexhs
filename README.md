@@ -1,6 +1,6 @@
 Realice todas las cuatro pruebas establecidas tratando de documentar todo lo más posible cada uno de los archivos y funciones, para de esta forma lograr un código más familiar, fácil de revisar y que demuestre mis habilidades y metodologías al momento de desarrollar.
 
-** Cada carpeta tiene su propio archivo README donde se especifica como ejecutar y probar todos los proyectos, además de que agregue explicaciones extra de funcionalidades y la arquitectura usada  **
+**Cada carpeta tiene su propio archivo README donde se especifica como ejecutar y probar todos los proyectos, además de que agregue explicaciones extra de funcionalidades y la arquitectura usada**
 
 ## Prueba 1 y 2:
 Para estas pruebas tarte de que el output fuera lo más similar posible a los ejemplos datos en el documento pdf.
